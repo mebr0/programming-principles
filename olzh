@@ -1,0 +1,23 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main(){
+	int x,p,y;
+	cin >> x >> p >> y;
+	int b=0;
+	int d=0;
+	for(int i=x;i<=y;){
+		d=d+1;
+		b=i;
+		int  c=i*p/100;
+		i=i+c;
+	}
+
+	if(b==y)cout << d-1;
+	else cout << d;
+	
+	//cout << b;
+	return 0;
+}
